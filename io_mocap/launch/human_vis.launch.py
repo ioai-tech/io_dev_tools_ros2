@@ -8,7 +8,7 @@ from launch.actions import ExecuteProcess
 def generate_launch_description():
     # 定义 URDF 文件路径
     urdf_path = PathJoinSubstitution(
-        [FindPackageShare("io_mocap"), "urdf", "blender_human.urdf"]
+        [FindPackageShare("io_mocap"), "description", "blender_human.urdf"]
     )
 
     # 启动 robot_state_publisher
