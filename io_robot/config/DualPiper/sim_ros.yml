@@ -1,0 +1,3 @@
+urdf: "urdf/piper_description.urdf"
+sub_topic: /joint_cmd
+pub_topic: /joint_states
