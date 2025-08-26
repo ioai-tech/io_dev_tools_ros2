@@ -1,4 +1,4 @@
-urdf: "description/urdf/G1.urdf"
+urdf: "urdf/xhand_right.urdf"
 sub_topic: joint_cmd
 pub_topic: joint_states
 # init_q:

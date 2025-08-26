@@ -7,19 +7,15 @@ from launch.substitutions import (
     Command,
 )
 from launch.conditions import IfCondition
-from launch_ros.actions import Node, SetParameter
+from launch_ros.actions import Node, SetParameter, PushRosNamespace
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
 import yaml
 import os
 
 
-def get_urdf_content_from_yaml(config_path, robot_path_val, robot_name_val):
+def get_urdf_content_from_yaml(urdf_file):
     try:
-        with open(config_path, "r") as file:
-            config_data = yaml.safe_load(file)
-        urdf_name = config_data["urdf"]
-        urdf_file = os.path.join(robot_path_val, robot_name_val, urdf_name)
         urdf_dir = os.path.dirname(urdf_file)
         print(f"Loading URDF from: {urdf_file}")
         try:
@@ -28,7 +24,7 @@ def get_urdf_content_from_yaml(config_path, robot_path_val, robot_name_val):
                 robot_description_content = robot_description_content.replace(
                     "file://../", f"file://{urdf_dir}/../"
                 )
-            return urdf_file, robot_description_content
+            return robot_description_content
         except Exception as e:
             print(f"Failed to read URDF file: {e}")
             return None
@@ -44,7 +40,7 @@ def launch_setup(context, *args, **kwargs):
     robot_name_val = context.launch_configurations["robot_name"]
     use_sim_val = context.launch_configurations["use_sim"]
     use_gui_val = context.launch_configurations["use_gui"]
-    robot_path_val = context.launch_configurations["robot_path"]
+    urdf_file = context.launch_configurations["urdf_file"]
 
     # 获取包路径（用于配置文件）
     pkg_share = get_package_share_directory("io_robot")
@@ -54,9 +50,7 @@ def launch_setup(context, *args, **kwargs):
     print("sim config file: ", sim_config_file)
 
     # 获取URDF文件名
-    urdf_file, robot_description_content = get_urdf_content_from_yaml(
-        sim_config_file, robot_path_val, robot_name_val
-    )
+    robot_description_content = get_urdf_content_from_yaml(urdf_file)
 
     # 构建RViz配置文件路径（RViz配置在io_robot包内）
     rviz_config_file = os.path.join(pkg_share, "config", robot_name_val, "rviz.rviz")
@@ -65,78 +59,79 @@ def launch_setup(context, *args, **kwargs):
     nodes_to_start = [
         # 设置仿真时间参数
         # SetParameter(name="use_sim_time", value=use_sim_val),
-        # RViz节点
-        Node(
-            package="rviz2",
-            executable="rviz2",
-            name="rviz",
-            arguments=["-d", rviz_config_file],
-            remappings=[
-                ("/tf", f"{namespace}/tf"),
-                ("/tf_static", f"{namespace}/tf_static"),
-            ],
-        ),
-        # 机器人状态发布器 - 通过参数传递URDF内容
-        Node(
-            package="robot_state_publisher",
-            executable="robot_state_publisher",
-            name="robot_state_publisher",
-            output="screen",
-            condition=IfCondition(
-                PythonExpression([f"{use_sim_val} or {use_gui_val}"])
-            ),
-            parameters=[
-                {
-                    "robot_description": robot_description_content,
-                }
-            ],
-            remappings=[
-                ("/joint_states", f"{namespace}/joint_states"),
-                ("/tf", f"{namespace}/tf"),
-                ("/tf_static", f"{namespace}/tf_static"),
-            ],
-        ),
-        Node(
-            package="robot_state_publisher",
-            executable="robot_state_publisher",
-            name="robot_state_publisher",
-            condition=IfCondition(
-                PythonExpression([f"not {use_sim_val} and not {use_gui_val}"])
-            ),
-            parameters=[{"robot_description": robot_description_content}],
-            # 立即退出，避免占用资源
-            on_exit=lambda context: None,
-        ),
-        # 非仿真模式下的GUI关节发布器
-        Node(
-            package="joint_state_publisher_gui",
-            executable="joint_state_publisher_gui",
-            name="joint_state_publisher_gui",
-            condition=IfCondition(
-                PythonExpression([f"not {use_sim_val} and {use_gui_val}"])
-            ),
-            remappings=[("/joint_states", f"{namespace}/joint_states")],
-        ),
-        # 仿真模式下的机器人仿真节点
-        Node(
-            package="io_robot",
-            executable="robot_sim_ros2.py",
-            name="robot_sim_v2",
-            output="screen",
-            condition=IfCondition(use_sim_val),
-            arguments=[
-                "--config_file",
-                sim_config_file,
-                "--urdf_file",
-                urdf_file,
-            ],
-            # parameters 用于传递 ROS2 参数，不是命令行参数
-            # parameters=[{"some_ros_param": "value"}],
-            remappings=[
-                ("/joint_cmd", f"{namespace}/joint_cmd"),
-                ("/joint_states", f"{namespace}/joint_states"),
-            ],
-        ),
+        GroupAction(
+            [
+                PushRosNamespace(namespace),
+                # RViz节点
+                Node(
+                    package="rviz2",
+                    executable="rviz2",
+                    name="rviz",
+                    arguments=["-d", rviz_config_file],
+                    remappings=[
+                        ("/robot_description", f"/{namespace}/robot_description"),
+                        ("/tf", f"/{namespace}/tf"),
+                        ("/tf_static", f"/{namespace}/tf_static"),
+                    ],
+                ),
+                # 机器人状态发布器 - 通过参数传递URDF内容
+                Node(
+                    package="robot_state_publisher",
+                    executable="robot_state_publisher",
+                    name="robot_state_publisher",
+                    output="screen",
+                    condition=IfCondition(
+                        PythonExpression([f"{use_sim_val} or {use_gui_val}"])
+                    ),
+                    parameters=[
+                        {
+                            "robot_description": robot_description_content,
+                        }
+                    ],
+                    remappings=[
+                        ("/tf", f"/{namespace}/tf"),
+                        ("/tf_static", f"/{namespace}/tf_static"),
+                    ],
+                ),
+                Node(
+                    package="robot_state_publisher",
+                    executable="robot_state_publisher",
+                    name="robot_state_publisher",
+                    condition=IfCondition(
+                        PythonExpression([f"not {use_sim_val} and not {use_gui_val}"])
+                    ),
+                    parameters=[{"robot_description": robot_description_content}],
+                    # 立即退出，避免占用资源
+                    on_exit=lambda context: None,
+                ),
+                # 非仿真模式下的GUI关节发布器
+                Node(
+                    package="joint_state_publisher_gui",
+                    executable="joint_state_publisher_gui",
+                    name="joint_state_publisher_gui",
+                    condition=IfCondition(
+                        PythonExpression([f"not {use_sim_val} and {use_gui_val}"])
+                    ),
+                    # remappings=[("/joint_states", f"{namespace}/joint_states")],
+                ),
+                # 仿真模式下的机器人仿真节点
+                Node(
+                    package="io_robot",
+                    executable="robot_sim_ros2.py",
+                    name="robot_sim_v2",
+                    output="screen",
+                    condition=IfCondition(use_sim_val),
+                    arguments=[
+                        "--config_file",
+                        sim_config_file,
+                        "--urdf_file",
+                        urdf_file,
+                    ],
+                    # parameters 用于传递 ROS2 参数，不是命令行参数
+                    # parameters=[{"some_ros_param": "value"}],
+                ),
+            ]
+        )
     ]
 
     return nodes_to_start
