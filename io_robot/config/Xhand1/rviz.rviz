@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /RobotModel1
         - /TF1
+        - /PoseArray1
       Splitter Ratio: 0.5
     Tree Height: 917
   - Class: rviz_common/Selection
@@ -345,6 +346,27 @@ Visualization Manager:
                 {}
       Update Interval: 0
       Value: true
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.009999999776482582
+      Axes Radius: 0.0020000000949949026
+      Class: rviz_default_plugins/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Axes
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /io_align/poses
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -391,7 +413,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.4119427502155304
+      Distance: 0.5167409777641296
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -406,10 +428,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3453989326953888
+      Pitch: 0.4103991389274597
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.445395827293396
+      Yaw: 0.5603963136672974
     Saved: ~
 Window Geometry:
   Displays:
