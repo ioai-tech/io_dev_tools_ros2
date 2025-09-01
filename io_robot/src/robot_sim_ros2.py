@@ -47,7 +47,7 @@ class RobotSimRos(Node):
             print(init_q.keys())
             self.robot.move_arm(
                 list(init_q.values()),
-                [self.robot.jointId[joint] for joint in init_q.keys()],
+                [self.robot.jointName2IdDic[joint] for joint in init_q.keys()],
             )
         time.sleep(0.5)
         self.dt = 0.01
@@ -80,7 +80,7 @@ class RobotSimRos(Node):
         jointNamelist = set(list_target) & set(list_source)
         assert jointNamelist != None
         mapping = dict(zip(list_source, list_in))
-        jointIdlist = [self.robot.jointId[i] for i in jointNamelist]
+        jointIdlist = [self.robot.jointName2IdDic[i] for i in jointNamelist]
         return jointIdlist, [mapping[i] for i in jointNamelist]
 
 

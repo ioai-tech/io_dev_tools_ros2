@@ -7,6 +7,8 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /TF1
+        - /TF1/Tree1
       Splitter Ratio: 0.5
     Tree Height: 563
   - Class: rviz_common/Selection
@@ -67,10 +69,6 @@ Visualization Manager:
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_color_optical_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -412,10 +410,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        link_LeftMarker:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         link_LeftShoulder_P:
           Alpha: 1
           Show Axes: false
@@ -468,6 +462,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        link_Realsense_Camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         link_RightArm_P:
           Alpha: 1
           Show Axes: false
@@ -780,10 +778,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        link_RightMarker:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         link_RightShoulder_P:
           Alpha: 1
           Show Axes: false
@@ -857,6 +851,270 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_link:
+          Value: true
+        link_Head_Y:
+          Value: true
+        link_Hips_Y:
+          Value: true
+        link_LeftArm_Y:
+          Value: true
+        link_LeftController:
+          Value: true
+        link_LeftFoot_Y:
+          Value: true
+        link_LeftForeArm_Y:
+          Value: true
+        link_LeftHandIndex1_Y:
+          Value: true
+        link_LeftHandIndex2_Y:
+          Value: true
+        link_LeftHandIndex3_Y:
+          Value: true
+        link_LeftHandMiddle1_Y:
+          Value: true
+        link_LeftHandMiddle2_Y:
+          Value: true
+        link_LeftHandMiddle3_Y:
+          Value: true
+        link_LeftHandPinky1_Y:
+          Value: true
+        link_LeftHandPinky2_Y:
+          Value: true
+        link_LeftHandPinky3_Y:
+          Value: true
+        link_LeftHandRing1_Y:
+          Value: true
+        link_LeftHandRing2_Y:
+          Value: true
+        link_LeftHandRing3_Y:
+          Value: true
+        link_LeftHandThumb1_Y:
+          Value: true
+        link_LeftHandThumb2_Y:
+          Value: true
+        link_LeftHandThumb3_Y:
+          Value: true
+        link_LeftHand_Y:
+          Value: true
+        link_LeftInHandIndex_Y:
+          Value: true
+        link_LeftInHandMiddle_Y:
+          Value: true
+        link_LeftInHandPinky_Y:
+          Value: true
+        link_LeftInHandRing_Y:
+          Value: true
+        link_LeftLeg_Y:
+          Value: true
+        link_LeftShoulder_Y:
+          Value: true
+        link_LeftUpLeg_Y:
+          Value: true
+        link_Neck1_Y:
+          Value: true
+        link_Neck_Y:
+          Value: true
+        link_RightArm_Y:
+          Value: true
+        link_RightController:
+          Value: true
+        link_RightFoot_Y:
+          Value: true
+        link_RightForeArm_Y:
+          Value: true
+        link_RightHandIndex1_Y:
+          Value: true
+        link_RightHandIndex2_Y:
+          Value: true
+        link_RightHandIndex3_Y:
+          Value: true
+        link_RightHandMiddle1_Y:
+          Value: true
+        link_RightHandMiddle2_Y:
+          Value: true
+        link_RightHandMiddle3_Y:
+          Value: true
+        link_RightHandPinky1_Y:
+          Value: true
+        link_RightHandPinky2_Y:
+          Value: true
+        link_RightHandPinky3_Y:
+          Value: true
+        link_RightHandRing1_Y:
+          Value: true
+        link_RightHandRing2_Y:
+          Value: true
+        link_RightHandRing3_Y:
+          Value: true
+        link_RightHandThumb1_Y:
+          Value: true
+        link_RightHandThumb2_Y:
+          Value: true
+        link_RightHandThumb3_Y:
+          Value: true
+        link_RightHand_Y:
+          Value: true
+        link_RightInHandIndex_Y:
+          Value: true
+        link_RightInHandMiddle_Y:
+          Value: true
+        link_RightInHandPinky_Y:
+          Value: true
+        link_RightInHandRing_Y:
+          Value: true
+        link_RightLeg_Y:
+          Value: true
+        link_RightShoulder_Y:
+          Value: true
+        link_RightUpLeg_Y:
+          Value: true
+        link_Spine1_Y:
+          Value: true
+        link_Spine2_Y:
+          Value: true
+        link_Spine_Y:
+          Value: true
+        link_VRHead:
+          Value: true
+      Marker Scale: 0.10000000149011612
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_link:
+          link_Head_Y:
+            {}
+          link_Hips_Y:
+            {}
+          link_LeftArm_Y:
+            {}
+          link_LeftController:
+            {}
+          link_LeftFoot_Y:
+            {}
+          link_LeftForeArm_Y:
+            {}
+          link_LeftHandIndex1_Y:
+            {}
+          link_LeftHandIndex2_Y:
+            {}
+          link_LeftHandIndex3_Y:
+            {}
+          link_LeftHandMiddle1_Y:
+            {}
+          link_LeftHandMiddle2_Y:
+            {}
+          link_LeftHandMiddle3_Y:
+            {}
+          link_LeftHandPinky1_Y:
+            {}
+          link_LeftHandPinky2_Y:
+            {}
+          link_LeftHandPinky3_Y:
+            {}
+          link_LeftHandRing1_Y:
+            {}
+          link_LeftHandRing2_Y:
+            {}
+          link_LeftHandRing3_Y:
+            {}
+          link_LeftHandThumb1_Y:
+            {}
+          link_LeftHandThumb2_Y:
+            {}
+          link_LeftHandThumb3_Y:
+            {}
+          link_LeftHand_Y:
+            {}
+          link_LeftInHandIndex_Y:
+            {}
+          link_LeftInHandMiddle_Y:
+            {}
+          link_LeftInHandPinky_Y:
+            {}
+          link_LeftInHandRing_Y:
+            {}
+          link_LeftLeg_Y:
+            {}
+          link_LeftShoulder_Y:
+            {}
+          link_LeftUpLeg_Y:
+            {}
+          link_Neck1_Y:
+            {}
+          link_Neck_Y:
+            {}
+          link_RightArm_Y:
+            {}
+          link_RightController:
+            {}
+          link_RightFoot_Y:
+            {}
+          link_RightForeArm_Y:
+            {}
+          link_RightHandIndex1_Y:
+            {}
+          link_RightHandIndex2_Y:
+            {}
+          link_RightHandIndex3_Y:
+            {}
+          link_RightHandMiddle1_Y:
+            {}
+          link_RightHandMiddle2_Y:
+            {}
+          link_RightHandMiddle3_Y:
+            {}
+          link_RightHandPinky1_Y:
+            {}
+          link_RightHandPinky2_Y:
+            {}
+          link_RightHandPinky3_Y:
+            {}
+          link_RightHandRing1_Y:
+            {}
+          link_RightHandRing2_Y:
+            {}
+          link_RightHandRing3_Y:
+            {}
+          link_RightHandThumb1_Y:
+            {}
+          link_RightHandThumb2_Y:
+            {}
+          link_RightHandThumb3_Y:
+            {}
+          link_RightHand_Y:
+            {}
+          link_RightInHandIndex_Y:
+            {}
+          link_RightInHandMiddle_Y:
+            {}
+          link_RightInHandPinky_Y:
+            {}
+          link_RightInHandRing_Y:
+            {}
+          link_RightLeg_Y:
+            {}
+          link_RightShoulder_Y:
+            {}
+          link_RightUpLeg_Y:
+            {}
+          link_Spine1_Y:
+            {}
+          link_Spine2_Y:
+            {}
+          link_Spine_Y:
+            {}
+          link_VRHead:
+            {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -903,25 +1161,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.0655031204223633
+      Distance: 1.5637329816818237
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.12832391262054443
-        Y: 0.06766891479492188
-        Z: -0.2694717049598694
+        X: -0.13413222134113312
+        Y: 0.1967150717973709
+        Z: -0.6734313368797302
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3553980886936188
+      Pitch: 1.3097963333129883
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.1403979063034058
+      Yaw: 1.8003995418548584
     Saved: ~
 Window Geometry:
   Displays:
