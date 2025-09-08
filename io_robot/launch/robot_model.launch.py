@@ -22,7 +22,7 @@ def get_urdf_content_from_yaml(urdf_file):
             with open(urdf_file, "r") as urdf:
                 robot_description_content = urdf.read()
                 robot_description_content = robot_description_content.replace(
-                    "file://../", f"file://{urdf_dir}/../"
+                    "file://", f"file://{urdf_dir}/"
                 )
             return robot_description_content
         except Exception as e:
