@@ -1,0 +1,24 @@
+rate: 100
+joint_target: "/io_teleop/target_joint_from_mocap"
+joint_cmd: "/io_teleop/joint_cmd"
+joint_state: "/io_teleop/joint_states"
+ee_target: "/io_teleop/target_ee_poses"
+ee_state: "/io_teleop/state_ee_poses"
+control_type: "joint"
+control_joints:
+    # type sine step ramp
+    # waist_yaw_joint:
+    #   type: "sine"
+    #   magnitude: 0.5
+    #   frequence: 0.2
+    waist_roll_joint:
+      type: "sine"
+      magnitude: 0.5
+      frequence: 0.2
+    waist_pitch_joint:
+      type: "sine"
+      magnitude: 0.5
+      frequence: 0.2
+      
+
+control_ee:
