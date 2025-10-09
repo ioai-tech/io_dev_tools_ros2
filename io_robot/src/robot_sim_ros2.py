@@ -34,10 +34,7 @@ class RobotSimRos(Node):
         self.joint_state_pub = self.create_publisher(
             JointState,
             config["pub_topic"],
-            QoSProfile(
-                depth=1,
-                reliability=QoSReliabilityPolicy.BEST_EFFORT,
-            ),
+            QoSProfile(depth=1),
         )
         self.robot.home()
         time.sleep(0.5)
