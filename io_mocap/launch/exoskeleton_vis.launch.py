@@ -44,7 +44,7 @@ def generate_launch_description():
         output="screen",
         arguments=["-d", rviz_config_path],
         remappings=[
-            ("/tf", "/io_fusion/tf"),
+            ("/tf", "/io_fusion/tf_exoskeleton"),
         ],
     )
 
