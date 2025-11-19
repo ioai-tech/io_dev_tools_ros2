@@ -8,7 +8,7 @@ from launch.actions import ExecuteProcess
 def generate_launch_description():
     # 定义 URDF 文件路径
     urdf_path = PathJoinSubstitution(
-        [FindPackageShare("io_mocap"), "description", "blender_human_skeleton.urdf"]
+        [FindPackageShare("io_mocap"), "description", "blender_human_skeleton_v4.urdf"]
     )
 
     # 启动 robot_state_publisher
@@ -44,7 +44,7 @@ def generate_launch_description():
         output="screen",
         arguments=["-d", rviz_config_path],
         remappings=[
-            ("/tf", "/io_fusion/tf"),
+            ("/tf", "/io_fusion/tf_exoskeleton"),
         ],
     )
 
