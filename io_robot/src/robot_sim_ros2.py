@@ -24,13 +24,22 @@ class RobotSimRos(Node):
 
         # ros
         super().__init__("Robot_Sim_ROS2")
-
-        self.create_subscription(
-            JointState,
-            config["sub_topic"],
-            self.joint_command_callback,
-            QoSProfile(depth=1),
-        )
+        if isinstance(config["sub_topic"],list):
+            for topic in config["sub_topic"]:
+                self.create_subscription(
+                    JointState,
+                    topic,
+                    self.joint_command_callback,
+                    QoSProfile(depth=1),
+                )
+        else:
+            for topic in config["sub_topic"]:
+                self.create_subscription(
+                    JointState,
+                    config["sub_topic"],
+                    self.joint_command_callback,
+                    QoSProfile(depth=1),
+                )
         self.joint_state_pub = self.create_publisher(
             JointState,
             config["pub_topic"],
