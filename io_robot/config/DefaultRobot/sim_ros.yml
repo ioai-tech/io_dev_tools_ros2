@@ -1,5 +1,4 @@
-urdf: "urdf/xhand_right.urdf"
-sub_topic: [joint_cmd_finger_left, joint_cmd_finger_right]
+sub_topic: joint_cmd
 pub_topic: joint_states
 # init_q:
 #   right_shoulder_pitch_joint: 0
