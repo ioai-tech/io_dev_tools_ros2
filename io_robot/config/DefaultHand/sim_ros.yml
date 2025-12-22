@@ -1,0 +1,2 @@
+sub_topic: [joint_cmd_finger_left, joint_cmd_finger_right, joint_commands]
+pub_topic: joint_states

@@ -8,8 +8,6 @@ Panels:
         - /Status1
         - /RobotModel1
         - /TF1
-        - /PoseArray1
-        - /PoseArray2
       Splitter Ratio: 0.5
     Tree Height: 1024
   - Class: rviz_common/Selection
@@ -69,7 +67,157 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        left_hand_back_link:
+        l_f_link1_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link1_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link1_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link1_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link1_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link1_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link2_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link3_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link4_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_f_link5_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_hand_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -78,148 +226,157 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        left_hand_index_bend_link:
+        r_f_link1_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_index_rota_link1:
+        r_f_link1_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_index_rota_link2:
+        r_f_link1_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_index_rota_tip:
+        r_f_link1_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_index_rotaback_link1:
+        r_f_link1_pad:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_index_rotaback_link2:
+        r_f_link1_tip:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_link:
+        r_f_link2_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_mid_link1:
+        r_f_link2_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_mid_link2:
+        r_f_link2_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_mid_tip:
+        r_f_link2_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_midback_link1:
+        r_f_link2_pad:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_midback_link2:
+        r_f_link2_tip:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_pinky_link1:
+        r_f_link3_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_pinky_link2:
+        r_f_link3_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_pinky_tip:
+        r_f_link3_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_pinkyback_link1:
+        r_f_link3_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_pinkyback_link2:
+        r_f_link3_pad:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_ring_link1:
+        r_f_link3_tip:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_ring_link2:
+        r_f_link4_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_ring_tip:
+        r_f_link4_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_ringback_link1:
+        r_f_link4_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_ringback_link2:
+        r_f_link4_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_bend_link:
+        r_f_link4_pad:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_rota_link1:
+        r_f_link4_tip:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_rota_link2:
+        r_f_link5_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_rota_tip:
+        r_f_link5_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_rotaback_link1:
+        r_f_link5_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_hand_thumb_rotaback_link2:
+        r_f_link5_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_hand_back_link:
+        r_f_link5_pad:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_f_link5_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_hand_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -228,147 +385,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        right_hand_index_bend_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_index_rota_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_index_rota_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_index_rota_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_index_rotaback_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_index_rotaback_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_mid_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_mid_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_mid_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_midback_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_midback_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_pinky_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_pinky_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_pinky_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_pinkyback_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_pinkyback_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_ring_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_ring_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_ring_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_ringback_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_ringback_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_bend_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_rota_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_rota_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_rota_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_rotaback_link1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_hand_thumb_rotaback_link2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         world:
           Alpha: 1
           Show Axes: false
@@ -386,272 +402,230 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        left_hand_back_link:
+        l_f_link1_1:
+          Value: true
+        l_f_link1_2:
+          Value: true
+        l_f_link1_3:
+          Value: true
+        l_f_link1_4:
+          Value: true
+        l_f_link1_pad:
+          Value: true
+        l_f_link1_tip:
+          Value: true
+        l_f_link2_1:
+          Value: true
+        l_f_link2_2:
+          Value: true
+        l_f_link2_3:
+          Value: true
+        l_f_link2_4:
+          Value: true
+        l_f_link2_pad:
+          Value: true
+        l_f_link2_tip:
+          Value: true
+        l_f_link3_1:
+          Value: true
+        l_f_link3_2:
+          Value: true
+        l_f_link3_3:
+          Value: true
+        l_f_link3_4:
+          Value: true
+        l_f_link3_pad:
+          Value: true
+        l_f_link3_tip:
+          Value: true
+        l_f_link4_1:
+          Value: true
+        l_f_link4_2:
+          Value: true
+        l_f_link4_3:
+          Value: true
+        l_f_link4_4:
+          Value: true
+        l_f_link4_pad:
+          Value: true
+        l_f_link4_tip:
+          Value: true
+        l_f_link5_1:
+          Value: true
+        l_f_link5_2:
+          Value: true
+        l_f_link5_3:
+          Value: true
+        l_f_link5_4:
+          Value: true
+        l_f_link5_pad:
+          Value: true
+        l_f_link5_tip:
+          Value: true
+        left_hand_base:
           Value: true
         left_hand_ee_link:
           Value: true
-        left_hand_index_bend_link:
+        r_f_link1_1:
           Value: true
-        left_hand_index_rota_link1:
+        r_f_link1_2:
           Value: true
-        left_hand_index_rota_link2:
+        r_f_link1_3:
           Value: true
-        left_hand_index_rota_tip:
+        r_f_link1_4:
           Value: true
-        left_hand_index_rotaback_link1:
+        r_f_link1_pad:
           Value: true
-        left_hand_index_rotaback_link2:
+        r_f_link1_tip:
           Value: true
-        left_hand_link:
+        r_f_link2_1:
           Value: true
-        left_hand_mid_link1:
+        r_f_link2_2:
           Value: true
-        left_hand_mid_link2:
+        r_f_link2_3:
           Value: true
-        left_hand_mid_tip:
+        r_f_link2_4:
           Value: true
-        left_hand_midback_link1:
+        r_f_link2_pad:
           Value: true
-        left_hand_midback_link2:
+        r_f_link2_tip:
           Value: true
-        left_hand_pinky_link1:
+        r_f_link3_1:
           Value: true
-        left_hand_pinky_link2:
+        r_f_link3_2:
           Value: true
-        left_hand_pinky_tip:
+        r_f_link3_3:
           Value: true
-        left_hand_pinkyback_link1:
+        r_f_link3_4:
           Value: true
-        left_hand_pinkyback_link2:
+        r_f_link3_pad:
           Value: true
-        left_hand_ring_link1:
+        r_f_link3_tip:
           Value: true
-        left_hand_ring_link2:
+        r_f_link4_1:
           Value: true
-        left_hand_ring_tip:
+        r_f_link4_2:
           Value: true
-        left_hand_ringback_link1:
+        r_f_link4_3:
           Value: true
-        left_hand_ringback_link2:
+        r_f_link4_4:
           Value: true
-        left_hand_thumb_bend_link:
+        r_f_link4_pad:
           Value: true
-        left_hand_thumb_rota_link1:
+        r_f_link4_tip:
           Value: true
-        left_hand_thumb_rota_link2:
+        r_f_link5_1:
           Value: true
-        left_hand_thumb_rota_tip:
+        r_f_link5_2:
           Value: true
-        left_hand_thumb_rotaback_link1:
+        r_f_link5_3:
           Value: true
-        left_hand_thumb_rotaback_link2:
+        r_f_link5_4:
           Value: true
-        right_hand_back_link:
+        r_f_link5_pad:
+          Value: true
+        r_f_link5_tip:
+          Value: true
+        right_hand_base:
           Value: true
         right_hand_ee_link:
           Value: true
-        right_hand_index_bend_link:
-          Value: true
-        right_hand_index_rota_link1:
-          Value: true
-        right_hand_index_rota_link2:
-          Value: true
-        right_hand_index_rota_tip:
-          Value: true
-        right_hand_index_rotaback_link1:
-          Value: true
-        right_hand_index_rotaback_link2:
-          Value: true
-        right_hand_link:
-          Value: true
-        right_hand_mid_link1:
-          Value: true
-        right_hand_mid_link2:
-          Value: true
-        right_hand_mid_tip:
-          Value: true
-        right_hand_midback_link1:
-          Value: true
-        right_hand_midback_link2:
-          Value: true
-        right_hand_pinky_link1:
-          Value: true
-        right_hand_pinky_link2:
-          Value: true
-        right_hand_pinky_tip:
-          Value: true
-        right_hand_pinkyback_link1:
-          Value: true
-        right_hand_pinkyback_link2:
-          Value: true
-        right_hand_ring_link1:
-          Value: true
-        right_hand_ring_link2:
-          Value: true
-        right_hand_ring_tip:
-          Value: true
-        right_hand_ringback_link1:
-          Value: true
-        right_hand_ringback_link2:
-          Value: true
-        right_hand_thumb_bend_link:
-          Value: true
-        right_hand_thumb_rota_link1:
-          Value: true
-        right_hand_thumb_rota_link2:
-          Value: true
-        right_hand_thumb_rota_tip:
-          Value: true
-        right_hand_thumb_rotaback_link1:
-          Value: true
-        right_hand_thumb_rotaback_link2:
-          Value: true
         world:
           Value: true
-      Marker Scale: 0.10000000149011612
+      Marker Scale: 0.05000000074505806
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
         world:
-          left_hand_link:
-            left_hand_back_link:
-              {}
+          left_hand_base:
+            l_f_link1_1:
+              l_f_link1_2:
+                l_f_link1_3:
+                  l_f_link1_4:
+                    l_f_link1_pad:
+                      {}
+                    l_f_link1_tip:
+                      {}
+            l_f_link2_1:
+              l_f_link2_2:
+                l_f_link2_3:
+                  l_f_link2_4:
+                    l_f_link2_pad:
+                      {}
+                    l_f_link2_tip:
+                      {}
+            l_f_link3_1:
+              l_f_link3_2:
+                l_f_link3_3:
+                  l_f_link3_4:
+                    l_f_link3_pad:
+                      {}
+                    l_f_link3_tip:
+                      {}
+            l_f_link4_1:
+              l_f_link4_2:
+                l_f_link4_3:
+                  l_f_link4_4:
+                    l_f_link4_pad:
+                      {}
+                    l_f_link4_tip:
+                      {}
+            l_f_link5_1:
+              l_f_link5_2:
+                l_f_link5_3:
+                  l_f_link5_4:
+                    l_f_link5_pad:
+                      {}
+                    l_f_link5_tip:
+                      {}
             left_hand_ee_link:
               {}
-            left_hand_index_bend_link:
-              left_hand_index_rota_link1:
-                left_hand_index_rota_link2:
-                  left_hand_index_rota_tip:
-                    {}
-                  left_hand_index_rotaback_link2:
-                    {}
-                left_hand_index_rotaback_link1:
-                  {}
-            left_hand_mid_link1:
-              left_hand_mid_link2:
-                left_hand_mid_tip:
-                  {}
-                left_hand_midback_link2:
-                  {}
-              left_hand_midback_link1:
-                {}
-            left_hand_pinky_link1:
-              left_hand_pinky_link2:
-                left_hand_pinky_tip:
-                  {}
-                left_hand_pinkyback_link2:
-                  {}
-              left_hand_pinkyback_link1:
-                {}
-            left_hand_ring_link1:
-              left_hand_ring_link2:
-                left_hand_ring_tip:
-                  {}
-                left_hand_ringback_link2:
-                  {}
-              left_hand_ringback_link1:
-                {}
-            left_hand_thumb_bend_link:
-              left_hand_thumb_rota_link1:
-                left_hand_thumb_rota_link2:
-                  left_hand_thumb_rota_tip:
-                    {}
-                  left_hand_thumb_rotaback_link2:
-                    {}
-                left_hand_thumb_rotaback_link1:
-                  {}
-          right_hand_link:
-            right_hand_back_link:
-              {}
+          right_hand_base:
+            r_f_link1_1:
+              r_f_link1_2:
+                r_f_link1_3:
+                  r_f_link1_4:
+                    r_f_link1_pad:
+                      {}
+                    r_f_link1_tip:
+                      {}
+            r_f_link2_1:
+              r_f_link2_2:
+                r_f_link2_3:
+                  r_f_link2_4:
+                    r_f_link2_pad:
+                      {}
+                    r_f_link2_tip:
+                      {}
+            r_f_link3_1:
+              r_f_link3_2:
+                r_f_link3_3:
+                  r_f_link3_4:
+                    r_f_link3_pad:
+                      {}
+                    r_f_link3_tip:
+                      {}
+            r_f_link4_1:
+              r_f_link4_2:
+                r_f_link4_3:
+                  r_f_link4_4:
+                    r_f_link4_pad:
+                      {}
+                    r_f_link4_tip:
+                      {}
+            r_f_link5_1:
+              r_f_link5_2:
+                r_f_link5_3:
+                  r_f_link5_4:
+                    r_f_link5_pad:
+                      {}
+                    r_f_link5_tip:
+                      {}
             right_hand_ee_link:
               {}
-            right_hand_index_bend_link:
-              right_hand_index_rota_link1:
-                right_hand_index_rota_link2:
-                  right_hand_index_rota_tip:
-                    {}
-                  right_hand_index_rotaback_link2:
-                    {}
-                right_hand_index_rotaback_link1:
-                  {}
-            right_hand_mid_link1:
-              right_hand_mid_link2:
-                right_hand_mid_tip:
-                  {}
-                right_hand_midback_link2:
-                  {}
-              right_hand_midback_link1:
-                {}
-            right_hand_pinky_link1:
-              right_hand_pinky_link2:
-                right_hand_pinky_tip:
-                  {}
-                right_hand_pinkyback_link2:
-                  {}
-              right_hand_pinkyback_link1:
-                {}
-            right_hand_ring_link1:
-              right_hand_ring_link2:
-                right_hand_ring_tip:
-                  {}
-                right_hand_ringback_link2:
-                  {}
-              right_hand_ringback_link1:
-                {}
-            right_hand_thumb_bend_link:
-              right_hand_thumb_rota_link1:
-                right_hand_thumb_rota_link2:
-                  right_hand_thumb_rota_tip:
-                    {}
-                  right_hand_thumb_rotaback_link2:
-                    {}
-                right_hand_thumb_rotaback_link1:
-                  {}
       Update Interval: 0
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.30000001192092896
-      Axes Length: 0.009999999776482582
-      Axes Radius: 0.0010000000474974513
-      Class: rviz_default_plugins/PoseArray
-      Color: 255; 25; 0
-      Enabled: true
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: PoseArray
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Axes
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Filter size: 10
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /io_align/poses_left_hand_ee_link
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.30000001192092896
-      Axes Length: 0.009999999776482582
-      Axes Radius: 0.0010000000474974513
-      Class: rviz_default_plugins/PoseArray
-      Color: 255; 25; 0
-      Enabled: true
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: PoseArray
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Axes
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Filter size: 10
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /io_align/poses_right_hand_ee_link
       Value: true
   Enabled: true
   Global Options:
@@ -699,25 +673,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.6954181790351868
+      Distance: 0.19597269594669342
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.1676851361989975
-        Y: 0.009443246759474277
-        Z: -0.01228609960526228
+        X: 0.21325381100177765
+        Y: 0.0025677939411252737
+        Z: 0.24110348522663116
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.48539865016937256
+      Pitch: 0.7303982377052307
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.4103920459747314
+      Yaw: 3.2104029655456543
     Saved: ~
 Window Geometry:
   Displays:
